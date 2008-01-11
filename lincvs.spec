@@ -52,11 +52,15 @@ ln -s ../../..%{_libdir}/apps/LinCVS/Help  %{name}-%{version}
 
 
 # Menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}): command="%{_bindir}/%{name}" needs="X11" \
-icon="%{name}.png" section="Applications/Development/Tools" \
-title="LinCVS" longtitle="LinCVS is a graphical interface for cvs."
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_bindir}/%{name}
+Icon=%{name}
+Categories=X-MandrivaLinux-MoreApplications-Development-Tools;Development;
+Name=LinCVS
+Comment=LinCVS is a graphical interface for cvs.
 EOF
   
 #icon
@@ -82,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%{name}
 %dir %{_libdir}/apps/LinCVS
 %{_libdir}/apps/LinCVS/*
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
