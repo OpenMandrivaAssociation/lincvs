@@ -5,7 +5,7 @@
 Name:		%name
 Version:	%version
 Release:	%release
-Summary:	LinCVS is a graphical interface for the cvs client commandline tool
+Summary:	Graphical interface for the cvs client commandline tool
 License:	GPL
 Group:		Development/Other
 URL:		http://www.lincvs.org/
