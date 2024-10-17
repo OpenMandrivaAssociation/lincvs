@@ -8,7 +8,7 @@ Release:	%release
 Summary:	Graphical interface for the cvs client commandline tool
 License:	GPL
 Group:		Development/Other
-URL:		http://www.lincvs.org/
+URL:		https://www.lincvs.org/
 Source0:	%name-%version-0-generic-src.tar.bz2
 Source1:	%{name}_16.png
 Source2:	%{name}_32.png
