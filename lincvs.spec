@@ -14,6 +14,7 @@ Source1:	%{name}_16.png
 Source2:	%{name}_32.png
 Source3:	%{name}_48.png
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
+BuildRequires:	make
 BuildRequires:	qt3-devel
 Requires:	cvs
 
