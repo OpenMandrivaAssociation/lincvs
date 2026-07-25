@@ -1,6 +1,6 @@
 %define name	lincvs
 %define version 1.4.4
-%define release %mkrel 4
+%define release 5
 
 Name:		%name
 Version:	%version
